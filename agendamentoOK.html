@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario trabalho</title>
+    <style>
+      body{
+          font-family: Arial, Helvetica, sans-serif;
+          background-image: linear-gradient(to right, rgb(222, 145, 242), rgb(229, 192, 240));   
+      }
+      .box{ 
+        color: white;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        background-color: rgb(2, 2, 30);
+        padding: 15px;
+        border-radius: 15px;
+        width: 20%;
+      }
+      fieldset{
+        border: 3px solid rgb(197, 137, 246);
+      }
+      legend{
+        border: 1px solid rgb(255, 146, 242);
+        padding: 10px;
+        text-align: center;
+        background-color: rgb(180, 30, 255);
+        border-radius: 8px;
+      }
+      .inputBox{
+        position: relative;
+      }
+      .inputuser{
+        background: none;
+        border: none;
+        border-bottom: 1px solid white;
+        outline: none;
+        color: white;
+        font-size: 15px;
+        width: 100%;
+        letter-spacing: 2px;
+      }
+      .labelInput{
+        top: 0px;
+        left: 0px;
+        pointer-events: none;
+        transition: .5s;
+      }
+      .inputuser:focus ~ .labelInput,
+      .inputuser:valid ~.labelInput{
+
+        top: -20px;
+        font-size: 12px;
+        color: rgb(255, 255, 255);
+      }
+      #data_nascimento{
+        border:none;
+        padding: 8px;
+        border-radius: 10px;
+        outline: none;
+        font-size: 15px;
+      }
+    #submit{
+        background-image: linear-gradient(to right, rgb(164, 84, 163), rgb(90, 20, 220));
+        width: 100%;
+        border: none;
+        padding: 15px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 10px ;
+      }
+    #submit:hover{
+        background-image: linear-gradient(to right, rgb(2, 64, 135), rgb(48, 10, 118));
+      }
+      .botao-enviar{
+        color:white;
+        text-decoration: none;
+
+      }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form>
+             <fieldset>
+                 <legend><b>Fórmulario para Agendamento</b></legend>
+                 <br>
+                 <div class="inputbox">
+                    <input type="text" name="nome" id="nome" class="inputuser" required>
+                    <label for="nome" class="labelInput">Nome completo</label>
+                 </div>
+                 <br><br>
+                 <div class="inputbox">
+                    <input type="text" name="email" id="email" class="inputuser" required>
+                    <label for="email" class="labelInput">Email</label>
+                 </div>
+                 <br><br>
+                 <div class="inputbox">
+                    <input type="text" name="telefone" id="telefone" class="inputuser" required>
+                    <label for="telefone" class="labelInput">Telefone</label>
+                 </div> 
+                 <br><br>
+                 <div class="inputbox">
+                    <input type="text" name="rg" id="rg" class="inputuser" required>
+                    <label for="rg" class="labelInput">RG</label>
+                 </div>
+                 <p>Agendamento para:</p>
+                 <input type ="radio" id="feminino" name="genero" value="feminino" required>
+                 <label for="feminino">Ginecologista</label>
+                 <br>
+                 <input type ="radio" id="outros" name="genero" value="outros" required>
+                 <label for="outros">Mamografia</label>
+                 <br>
+                 <input type ="radio" id="outros" name="genero" value="outros" required>
+                 <label for="outros">Papanicolau</label>
+                 <br>
+                 <input type ="radio" id="outros" name="genero" value="outros" required>
+                 <label for="outros">Ultrassom bebe</label>
+                 <br>
+                 <input type ="radio" id="outros" name="genero" value="outros" required>
+                 <label for="outros">Ultrassom mama</label>
+                 <br><br>
+                    <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                    <input type="date" name="data_nascimento" id="data_nascimento" required>
+                 <br><br>
+                 <div class="inputbox">
+                    <label for="data_nascimento"><b>Data de Agendamento:</b></label>
+                    <input type="date" name="data_agendamento" id="data_agendamento" required>
+                 </div>
+                 <br><br>
+                 <button type="submit" name="submit" id="submit">
+                  <a class="botao-enviar" href="cadastrado.html">Enviar</a> 
+                  </button>
+                  
+             </fieldset>
+        </form>
+
+    </div>
+</body>
+</html>

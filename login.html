@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>login</title>
+    <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(to right, rgb(222, 145, 242), rgb(229, 192, 240));
+    }
+    .tela-login{
+        background-color:rgba(0,0, 0, 0.9) ;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        padding: 80px;
+        border-radius: 15px;
+        color: white;
+    }
+    input{
+         padding: 15px;
+         border: none;
+         outline: none;
+         font-size: 15px;
+    }
+    
+    #submit{ 
+        background-image: linear-gradient(to right, rgb(164, 84, 163), rgb(90, 20, 220));
+        width: 100%;
+        border: none;
+        padding: 15px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    #submit:hover{        
+        background-image: linear-gradient(to right, rgb(2, 64, 135), rgb(48, 10, 118));
+    }
+    .botao-enviar{
+        color:white;
+        text-decoration: none;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="tela-login">
+     <H1>login</H1>
+     <input type="text" placeholder="Nome">
+     <br><br>
+     <input type="password" placeholder="senha">
+     <br><br>
+     <button type="submit" name="submit" id="submit">
+        <a class="botao-enviar" href="cadastrado.html" target="_blank">Enviar</a> 
+        </button>
+        <br><br>
+        <button type="submit" name="submit" id="submit">
+            <a class="botao-enviar" href="formulario.verdadeiroOK.html" target="_blank">Cadastre-se</a> 
+            </button>
+    </div>
+</body>
+</html>
